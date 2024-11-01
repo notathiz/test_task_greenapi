@@ -10,15 +10,18 @@
     <div class="container">
         <h1>GREEN-API Integration</h1>
         
+        <!-- Поля для подключения -->
         <label for="idInstance">ID Instance:</label>
         <input type="text" id="idInstance" placeholder="Введите ID Instance">
 
         <label for="apiTokenInstance">API Token Instance:</label>
         <input type="text" id="apiTokenInstance" placeholder="Введите API Token">
 
+        <!-- Кнопки для вызова методов -->
         <button onclick="getSettings()">getSettings</button>
         <button onclick="getStateInstance()">getStateInstance</button>
 
+        <!-- Поля для ввода параметров отправки сообщений и файлов -->
         <label for="chatIdMessage">Chat ID for Message:</label>
         <input type="text" id="chatIdMessage" placeholder="Введите номер чата">
 
@@ -35,6 +38,7 @@
 
         <button onclick="sendFileByUrl()">sendFileByUrl</button>
 
+        <!-- Поле для отображения ответа -->
         <label for="response">Ответ:</label>
         <textarea id="response" readonly></textarea>
     </div>
