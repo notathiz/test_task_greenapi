@@ -1,3 +1,4 @@
+// Общая функция для вызова API
 async function fetchData(url, method, data = {}) {
     const idInstance = document.getElementById('idInstance').value;
     const apiToken = document.getElementById('apiTokenInstance').value;
@@ -18,6 +19,7 @@ async function fetchData(url, method, data = {}) {
     }
 }
 
+// Функции для каждого метода API
 function getSettings() {
     fetchData('getSettings');
 }
