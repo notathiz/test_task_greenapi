@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN-API Integration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GREEN-API Integration</h1>
+        
+        <label for="idInstance">ID Instance:</label>
+        <input type="text" id="idInstance" placeholder="Введите ID Instance">
+
+        <label for="apiTokenInstance">API Token Instance:</label>
+        <input type="text" id="apiTokenInstance" placeholder="Введите API Token">
+
+        <button onclick="getSettings()">getSettings</button>
+        <button onclick="getStateInstance()">getStateInstance</button>
+
+        <label for="chatIdMessage">Chat ID for Message:</label>
+        <input type="text" id="chatIdMessage" placeholder="Введите номер чата">
+
+        <label for="messageText">Message Text:</label>
+        <input type="text" id="messageText" placeholder="Введите текст сообщения">
+
+        <button onclick="sendMessage()">sendMessage</button>
+
+        <label for="chatIdFile">Chat ID for File:</label>
+        <input type="text" id="chatIdFile" placeholder="Введите номер чата">
+
+        <label for="fileUrl">File URL:</label>
+        <input type="text" id="fileUrl" placeholder="Введите URL файла">
+
+        <button onclick="sendFileByUrl()">sendFileByUrl</button>
+
+        <label for="response">Ответ:</label>
+        <textarea id="response" readonly></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
